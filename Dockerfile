@@ -9,6 +9,11 @@ RUN apk add git
 RUN apk add --update alpine-sdk
 RUN apk add --no-cache openssl-dev libffi-dev
 RUN apk add gmp-dev
+RUN apk add libtool
+RUN apk add automake
+RUN apk add autoconf
+RUN apk add --update nodejs
+RUN apk add nodejs-npm
 
 # Add the Python dependencies
 RUN apk add --no-cache python3 && \
