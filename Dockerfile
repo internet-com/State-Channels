@@ -8,6 +8,7 @@ RUN apk add git
 # Update the Alpine SDKs and all of the C dependencies
 RUN apk add --update alpine-sdk
 RUN apk add --no-cache openssl-dev libffi-dev
+RUN apk add gmp-dev
 
 # Add the Python dependencies
 RUN apk add --no-cache python3 && \
