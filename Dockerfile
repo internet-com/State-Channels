@@ -22,12 +22,10 @@ RUN apk add --no-cache python3 && \
     pip3 install --upgrade pip setuptools && \
     if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi && \
     if [[ ! -e /usr/bin/python ]]; then ln -sf /usr/bin/python3 /usr/bin/python; fi && \
-    rm -r /root/.cache && \
-    pip install virtualenv
-
+    rm -r /root/.cache
+    
 RUN apk add python3-dev
 
-RUN git clone https://github.com/pkafei/State-Channels
+RUN pip install microraiden
 
-# Install Virtual Environment
-RUN virtualenv -p python3 env
+RUN git clone https://github.com/pkafei/State-Channels
