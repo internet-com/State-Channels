@@ -7,6 +7,7 @@ RUN apk add git
 
 # Update the Alpine SDKs and all of the C dependencies
 RUN apk add --update alpine-sdk
+RUN apk add --no-cache openssl-dev libffi-dev
 
 # Add the Python dependencies
 RUN apk add --no-cache python3 && \
@@ -17,6 +18,8 @@ RUN apk add --no-cache python3 && \
     if [[ ! -e /usr/bin/python ]]; then ln -sf /usr/bin/python3 /usr/bin/python; fi && \
     rm -r /root/.cache && \
     pip install virtualenv
+
+RUN apk add python3-dev
 
 RUN git clone https://github.com/pkafei/State-Channels
 
