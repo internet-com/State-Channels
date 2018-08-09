@@ -1,0 +1,22 @@
+{
+    "address": "baa1c4be4b925079bef195accc608c3301349d5d",
+    "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+            "iv": "8fa3f4f4ebb87298eeb13d90b851730c"
+        },
+        "ciphertext": "30405a63fdfbdd949368ac911cbf884fe3eaa2a38fb9c44723285b88df907dae",
+        "kdf": "pbkdf2",
+        "kdfparams": {
+            "c": 10240,
+            "dklen": 32,
+            "prf": "hmac-sha256",
+            "salt": "bf14bd0eb63c4092380ae9154487b0ea584d6d7349cc7c89eab3417370341576"
+        },
+        "mac": "12cb055f7a2154f50ae2426880ebbdb63275ac2856ca9b27a43909dcd217a503"
+    },
+    "id": "2fd8ead0-93d5-76b9-92a4-dc0996f74aa3",
+    "meta": "{\"description\":\"\",\"passwordHint\":\"\",\"timestamp\":1533799653100}",
+    "name": "Slock",
+    "version": 3
+}

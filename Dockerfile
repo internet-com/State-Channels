@@ -26,9 +26,11 @@ RUN apk add --no-cache python3 && \
 
 RUN apk add python3-dev
 
-RUN pip install microraiden
-
 RUN git clone https://github.com/pkafei/State-Channels
+
+WORKDIR /State-Channels/microraiden/
+
+RUN pip install microraiden
 
 WORKDIR /State-Channels/microraiden/microraiden/webui/microraiden
 
